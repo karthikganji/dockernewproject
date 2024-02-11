@@ -2,28 +2,28 @@ version: '3.8'
 version: '3.8'
 services:
   login:
-    image: karthikganji/login:latest
+    image: karthikganji/paytmlogin:latest
     ports:
       - "81:80"
     deploy:
       replicas: 6
 
   dth:
-    image: karthikganji/dth:latest
+    image: karthikganji/paytmdth:latest
     ports:
       - "82:80"
     deploy:
       replicas: 6
 
   movies:
-    image: karthikganji/movies:latest
+    image: karthikganji/paytmmovies:latest
     ports:
       - "83:80"
     deploy:
       replicas: 6
 
   ppb:
-    image: karthikganji/movies:latest
+    image: karthikganji/paytmppb:latest
     ports:
       - "84:80"
     deploy:
