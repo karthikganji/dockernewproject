@@ -9,24 +9,15 @@ services:
       replicas: 6
 
   dth:
-    image: karthikganji/paytmdth:latest
+    image: karthikganji/paytmppb:latest
     ports:
       - "82:80"
     deploy:
       replicas: 6
 
   movies:
-    image: karthikganji/paytmmovies:latest
+    image: karthikganji/paytmwallet:latest
     ports:
       - "83:80"
     deploy:
       replicas: 6
-
-  ppb:
-    image: karthikganji/paytmppb:latest
-    ports:
-      - "84:80"
-    deploy:
-      replicas: 6
-
-
