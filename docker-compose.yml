@@ -4,27 +4,27 @@ services:
   login:
     image: karthikganji/paytmlogin:latest
     ports:
-      - "81:80"
+      - "85:80"
     deploy:
       replicas: 6
 
   ppb:
     image: karthikganji/paytmppb:latest
     ports:
-      - "82:80"
+      - "86:80"
     deploy:
       replicas: 6
 
   wallet:
     image: karthikganji/paytmwallet:latest
     ports:
-      - "83:80"
+      - "87:80"
     deploy:
       replicas: 6
 
   nayaworld:
     image: karthikganji/paytmnayaworld:latest
     ports:
-      - "84:80"
+      - "88:80"
     deploy:
       replicas: 6
