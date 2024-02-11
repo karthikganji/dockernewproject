@@ -1,26 +1,32 @@
 version: '3.8'
+version: '3.8'
 services:
-  movies:
-    image: hpakala53/paytmmovies:latest
+  login:
+    image: karthikganji/login:latest
     ports:
       - "81:80"
     deploy:
-      replicas: 3
-  train:
-    image: hpakala53/paytmtrain:latest
+      replicas: 6
+
+  dth:
+    image: karthikganji/dth:latest
     ports:
       - "82:80"
     deploy:
-      replicas: 3
-  dth:
-    image: hpakala53/paytmdth:latest
+      replicas: 6
+
+  movies:
+    image: karthikganji/movies:latest
     ports:
       - "83:80"
     deploy:
-      replicas: 3
-  recharge:
-    image: hpakala53/paytmrecharge:latest
+      replicas: 6
+
+  ppb:
+    image: karthikganji/movies:latest
     ports:
       - "84:80"
     deploy:
-      replicas: 3
+      replicas: 6
+
+
